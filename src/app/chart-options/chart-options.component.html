@@ -1,0 +1,57 @@
+<div class="chart-options-ctnr">
+    <form [formGroup]="revenueForm">
+        <div class="revenue-ctnr">
+            <div class="title-section grid">
+                <p class="revenue-title m-tb-4 bold">{{culture.revenueTitle}}</p>
+                <p class="color-title m-tb-4 bold">{{culture.colorTitle}}</p>
+            </div>
+            <div class="category grid" formGroupName="firstCategory">
+                <div>
+                    <label class="p-tb-8" for="category-one-revenue">{{culture.categoryJan}}</label>
+                    <input class="p-8" id="category-one-revenue" type="text" formControlName="revenue">
+                </div>
+                    
+                <div>
+                    <label class="p-tb-8" for="category-one-clr">{{culture.color}}</label>
+                    <select class="p-8" id ="category-one-clr" formControlName="color">
+                        <option [value]="color" *ngFor="let color of colors">{{color}}</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="category grid" formGroupName="secondCategory">
+                <div>
+                    <label class="p-tb-8" for="category-two-revenue">{{culture.categoryFeb}}</label>
+                    <input class="p-8" id="category-two-revenue" type="text" formControlName="revenue">
+                </div>
+                <div>
+                    <label class="p-tb-8" for="category-two-color">{{culture.color}}</label>
+                    <select class="p-8" id="category-two-color" formControlName="color">
+                        <option [value]="color" *ngFor="let color of colors">{{color}}</option>
+                    </select>
+                </div> 
+            </div>
+
+            <div class="category grid" formGroupName="thirdCategory">
+                <div>
+                    <label class="p-tb-8" for="category-three-color">{{culture.categoryMarch}}</label>
+                    <input class="p-8" id="category-three-revenue" type="text" formControlName="revenue">
+                </div>
+                <div>
+                    <label class="p-tb-8" for="category-three-color">{{culture.color}}</label>
+                    <select class="p-8" formControlName="color">
+                        <option id="category-three-color" [value]="color" *ngFor="let color of colors">{{color}}</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="chart-type-section">
+            <p class="chart-type-title bold">{{culture.graphTypeText}}</p>
+            <div class="chart-type-option-ctnr">
+                <div class="chart-type-option p-tb-4"><input type="radio" name="graphType" value="pie" formControlName="graphType"> {{culture.graphTypePie}}</div>
+                <div class="chart-type-option p-tb-4"><input type="radio" name="graphType" value="column" formControlName="graphType"> {{culture.graphTypeColumn}}</div>
+                <div class="chart-type-option p-tb-4"><input type="radio" name="graphType" value="line" formControlName="graphType"> {{culture.graphTypeLine}}</div>
+            </div>
+        </div>
+    </form>
+</div>

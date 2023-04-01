@@ -1,0 +1,36 @@
+.chart-options-ctnr {
+    .revenue-ctnr {
+        .category {
+            div {
+                display: flex;
+                flex-direction: column;
+                max-width: 80%;
+            }
+        }
+    }
+    .chart-type-section {
+        .chart-type-title{
+            margin: 24px 0 8px;
+        }
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.m-tb-4 {
+    margin: 4px 0;
+}
+.p-tb-4 {
+    padding: 4px 0;
+}
+.p-tb-8 {
+    padding: 8px 0;
+}
+.p-8 {
+    padding: 8px;
+}
+.bold {
+    font-weight: 600;
+}

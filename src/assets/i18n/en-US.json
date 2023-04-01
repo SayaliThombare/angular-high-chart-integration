@@ -1,0 +1,12 @@
+{
+    "revenueTitle": "Select Monthly Revenue",
+    "colorTitle": "Select Color",
+    "categoryJan": "January",
+    "categoryFeb": "February",
+    "categoryMarch": "March",
+    "color": "Color",
+    "graphTypeText": "Graph Type",
+    "graphTypePie": "Pie",
+    "graphTypeColumn": "Bar",
+    "graphTypeLine": "Line"
+}
